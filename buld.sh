@@ -23,4 +23,4 @@ python manage.py collectstatic --no-input
 python manage.py migrate
 
 # Создание суперпользователя
-python create_superuser.py 
+python src/create_superuser.py

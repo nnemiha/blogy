@@ -19,8 +19,9 @@ python manage.py collectstatic --no-input --clear
 # cp -r frontend/dist/* staticfiles/
 
 # Сборка бэкенда
-python manage.py collectstatic --no-input
+
 python manage.py migrate
 
 # Создание суперпользователя
 python createsuperuser.py 
+python manage.py collectstatic --no-input

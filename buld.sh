@@ -25,3 +25,4 @@ python manage.py migrate
 # Создание суперпользователя
 python createsuperuser.py 
 python manage.py collectstatic --no-input
+echo ("staticfiles собраны")

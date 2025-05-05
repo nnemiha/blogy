@@ -2,54 +2,45 @@
 
 {% block content %}
 <body>
-
-
 <div class="text-center">
   {% for post in object_list %}
   <div class="post-entry">
-<<<<<<< HEAD
     <h2><a href="{% url 'post_detail' post.pk %}" class="text-white">{{ post.title }}</a></h2>
     <p class="text-white">{{ post.body }}</p>
-=======
-    <h2><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h2>
-    <p class="text-light">{{ post.body }}</p>
->>>>>>> ceaf274d150992d165c189e16498bf03004e603f
 
-    <style text>
-      /* Media Query for low resolution  Tablets, Ipads */
-             @media (min-width: 481px) and (max-width: 767px) {
-                 body {
-                     font-size: 2.5rem;
-                 }
-             }
+    <style>
+      /* Media Query for low resolution Tablets, Ipads */
+      @media (min-width: 481px) and (max-width: 767px) {
+          body {
+              font-size: 2.5rem;
+          }
+      }
 
-             /* Media Query for Tablets Ipads portrait mode */
-             @media (min-width: 768px) and (max-width: 1024px){
-                 body {
-                     font-size: 2rem;
-                 }
-             }
+      /* Media Query for Tablets Ipads portrait mode */
+      @media (min-width: 768px) and (max-width: 1024px) {
+          body {
+              font-size: 2rem;
+          }
+      }
 
-             /* Media Query for Laptops and Desktops */
-             @media (min-width: 1025px) and (max-width: 1280px){
-                 body {
-                     font-size: 1.5rem;
-                     padding: 0px 100px;
-                 }
-             }
+      /* Media Query for Laptops and Desktops */
+      @media (min-width: 1025px) and (max-width: 1280px) {
+          body {
+              font-size: 1.5rem;
+              padding: 0px 100px;
+          }
+      }
 
-             /* Media Query for Large screens */
-             @media (min-width: 1281px) {
-                 body {
-                                   font-size: 1rem;
-                                   padding: 0px 300px;
-                 }
-             }
+      /* Media Query for Large screens */
+      @media (min-width: 1281px) {
+          body {
+              font-size: 1rem;
+              padding: 0px 300px;
+          }
+      }
     </style>
-
-
   </div>
   {% endfor %}
 </div>
-{% endblock content %}
 </body>
+{% endblock content %}
